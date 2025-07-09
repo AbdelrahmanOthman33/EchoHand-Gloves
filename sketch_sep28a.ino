@@ -22,18 +22,18 @@ const char* azureRegion = "eastus"; // e.g., "eastus"
 String azureEndpoint = String("https://") + azureRegion + ".stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1?language=en-US";
 
 // I2S configuration for INMP441
-#define I2S_WS  14  // Word Select (LRCLK)
-#define I2S_SD  15  // Serial Data Output (DOUT)
-#define I2S_SCK 25  // Serial Clock (BCLK)
+define I2S_WS  14  // Word Select (LRCLK)
+define I2S_SD  15  // Serial Data Output (DOUT)
+define I2S_SCK 25  // Serial Clock (BCLK)
 
 // Audio Settings
-#define SAMPLE_RATE     16000
-#define SAMPLE_BITS     16
-#define CHANNELS        1
-#define RECORD_TIME     1       // Additional recording time in seconds
-#define CHUNK_DURATION  1.0     // Duration of each audio chunk in seconds
-#define CHUNK_SIZE      (SAMPLE_RATE * (SAMPLE_BITS / 8) * CHANNELS * CHUNK_DURATION) // 32000 bytes
-#define VAD_THRESHOLD   40      // Initial VAD threshold (adjust based on testing)
+define SAMPLE_RATE     16000
+define SAMPLE_BITS     16
+define CHANNELS        1
+define RECORD_TIME     1       // Additional recording time in seconds
+define CHUNK_DURATION  1.0     // Duration of each audio chunk in seconds
+define CHUNK_SIZE      (SAMPLE_RATE * (SAMPLE_BITS / 8) * CHANNELS * CHUNK_DURATION) // 32000 bytes
+define VAD_THRESHOLD   40      // Initial VAD threshold (adjust based on testing)
 
 // -------------------- Flex Sensor Configuration --------------------
 
